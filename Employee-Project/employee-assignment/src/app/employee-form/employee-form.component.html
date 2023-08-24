@@ -1,0 +1,61 @@
+<!-- Employee form -->
+<!-- <form (ngSubmit)="saveEmployee()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="employee.name" required>
+  
+    <label for="position">Position:</label>
+    <input type="text" id="position" [(ngModel)]="employee.position" required>
+  
+    <label for="department">Department:</label>
+    <input type="text" id="department" [(ngModel)]="employee.department" required>
+  
+    <button type="submit">Save</button>
+  </form>
+   -->
+
+   <!-- Employee form -->
+
+   <div mat-dialog-content class="add-knowledge-dialog--body">
+
+ 
+  <h1 mat-dialog-title class="align-center" style="font-size: medium;font-family: Noto Sans JP !important;font-weight: bold;text-align: center;">Add Employee Details</h1>
+  <div mat-dialog-content>
+  
+  
+    <div style="padding: 1rem 0">
+    
+        <form (ngSubmit)="saveEmployee()">
+        <div class="half-width" style="text-align: center;">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" [(ngModel)]="employee.name" name="name"  placeholder="Name" required>
+          
+        </div>
+       <div  class="half-width" style="text-align: center;">
+        <!-- <label for="position">Position:</label> -->
+        <input type="text" id="position" [(ngModel)]="employee.position" name="position"  placeholder="Position"required>
+      
+       </div>
+        <div  class="half-width" style="text-align: center;">
+            <!-- <label for="department">Department:</label> -->
+            <input type="text" id="department" [(ngModel)]="employee.department" name="department"  placeholder="Department" required>
+          
+        </div>
+       <div style="padding-left: 53%;">
+        <button type="submit" style="background-color:#11bee0;color: white;">Save</button>
+    
+       </div>
+      </form>
+    </div>
+  
+  </div>
+  </div>
+
+
+  
+  <!-- <div mat-dialog-actions style="margin-bottom: 1rem;float: right;margin-left:2px;">
+    <button mat-button class="normal-btn small half -width m-unset" (click)="createExtension()" style="font-size: medium;font-family: Noto Sans JP !important;color:white;font-weight: bold;">Save</button>
+  
+  </div> -->
+  <!-- <div mat-dialog-actions style="margin-bottom: 1rem;float: right;">
+    <button (click)="close()" mat-button class="normal-btn small half -width m-unset" style="font-size: medium;font-family: Noto Sans JP !important;color:white;font-weight: bold;">Cancel</button>
+  </div> -->

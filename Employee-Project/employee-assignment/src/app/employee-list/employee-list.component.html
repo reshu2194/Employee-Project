@@ -1,0 +1,41 @@
+<!-- Display employee list -->
+<!-- <ul>
+    <li *ngFor="let employee of employees">
+      {{ employee.name }} - {{ employee.position }} ({{ employee.department }})
+      <button (click)="deleteEmployee(employee.id)">Delete</button>
+    </li>
+  </ul>
+   -->
+   <!-- Display employee list -->
+<!-- Display employee list -->
+<div mat-dialog-content class="add-knowledge-dialog--body">
+
+ 
+    <h1 mat-dialog-title class="align-center" style="font-size: medium;font-family: Noto Sans JP !important;font-weight: bold;text-align: center;">Add Employee Details</h1>
+    <div mat-dialog-content>
+    
+<div style="text-align: center;" >
+    <div *ngFor="let employee of employees">
+        <div style="font-size:large;color: black;padding-right: 5%;">
+            {{ employee.name }}
+        </div>
+       <div style="padding-right:5%;color:gray">
+        {{ employee.position }} 
+       </div>
+       <div style="padding-right:5%;color:gray">
+        {{ employee.department }}
+       </div>
+      <div style="padding-left: 10%;">
+        <button (click)="deleteEmployee(employee.id)">Delete</button>
+        <!-- <a style="padding-left:2%;">Edit</a> -->
+        <button routerLink="/edit/{{ employee.id }}" style="margin-left: 1%;
+        width: 4%;
+    ">Edit</button>
+
+      </div><br>
+      
+    </div>
+</div>
+  
+  </div>
+  
